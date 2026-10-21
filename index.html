@@ -1,0 +1,343 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <title>Bright Peter | Cyber Security and Digital Forensics Researcher</title>
+
+  <meta name="description" content="Portfolio of a Cyber Security and Digital Forensics Tutorial Assistant Intern specializing in research, teaching, and development.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">Bright Peter</a>
+
+    <nav class="links" aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#research">Research</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button id="theme" type="button" aria-label="Switch colour theme">
+      Theme
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+
+      <div>
+        <p class="role">Cyber Security and Digital Forensics Researcher</p>
+
+        <h1>
+          I investigate digital threats and teach others how to spot them.
+        </h1>
+
+        <p class="lead">
+          I combine research, teaching and hands-on development to make
+          security knowledge practical, from detecting vishing calls to
+          preserving evidence that stands up to scrutiny.
+        </p>
+
+        <div class="btns">
+          <a class="btn pri" href="#projects">View projects</a>
+          <a class="btn sec" href="#contact">Get in touch</a>
+        </div>
+      </div>
+
+      <!-- VISHING ANALYZER WIDGET -->
+      <div class="lab" aria-labelledby="labh">
+        <h2 id="labh">Try the vishing call checker</h2>
+
+        <small>
+          A simplified, rule-based demonstration. Paste a call transcript
+          or use the sample below.
+        </small>
+
+        <textarea id="tx" aria-label="Call transcript">Hello, this is the security department of your bank. We detected suspicious activity and your account will be blocked within 24 hours. To verify your identity, please read me the verification code we just sent. Do not tell anyone about this call, and do not hang up.</textarea>
+
+        <button class="btn pri" id="run" type="button">
+          Analyse call
+        </button>
+
+        <div class="out" id="out" aria-live="polite">
+          <strong id="verdict"></strong>
+
+          <div class="meter">
+            <span id="fill"></span>
+          </div>
+
+          <div class="tx" id="marked"></div>
+
+          <p class="legend">
+            <span><i class="urg-key"></i>Urgency</span>
+            <span><i class="aut-key"></i>Authority</span>
+            <span><i class="cred-key"></i>Credentials or payment</span>
+            <span><i class="sec-key"></i>Secrecy</span>
+          </p>
+
+          <small>
+            This is a demonstration, not a validated fraud detection system.
+          </small>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <div class="wrap">
+      <h2>About me</h2>
+
+      <p>
+        I’m a Cyber Security and Digital Forensics Tutorial Assistant Intern.
+        My work sits at the meeting point of three things I care about:
+        research, teaching and building tools that solve real problems.
+      </p>
+
+      <p>
+        I enjoy turning complex topics such as evidence handling, social
+        engineering and network analysis into labs and explanations that
+        students can follow and reuse. Replace this paragraph with your
+        personal story, institution and professional goals.
+      </p>
+
+      <div class="timeline">
+        <div>
+          <b>Tutorial Assistant Intern, Cyber Security and Digital Forensics</b>
+          <span>The University of Dodoma, Present</span>
+        </div>
+
+        <div>
+          <b>B.Sc. Computer Networks and Information Security Engineering</b>
+          <span>The University of Dodoma, 2021-2025</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects">
+    <div class="wrap">
+      <h2>Projects</h2>
+
+      <p class="lead">
+        Each project is filed like a case: the problem, the method and the outcome.
+      </p>
+
+      <div class="exhibits">
+
+        <article class="ex">
+          <div class="tag">
+            Exhibit A
+            <small>Research and development</small>
+          </div>
+
+          <div class="body">
+            <h3>Vishing call detection</h3>
+
+            <p>
+              A system that identifies voice-phishing calls by examining
+              spoken content and conversational patterns. It looks for
+              signals such as urgency, false authority, requests for
+              verification codes or payments, and pressure to keep the
+              call secret. This tool was based on Swahili language and cultural context, and can be adapted to other languages.
+            </p>
+
+            <p>
+              <strong>Outcome:</strong> Verified accuracy was 85% on a test set of 200 calls. The system can be used to flag suspicious calls for further review, and to educate users about common vishing tactics. Link to the project code and dataset kept private.
+              More than 1000 datasets were collected and used
+              <!-- dataset size or research findings -->
+            </p>
+
+            <ul class="chips">
+              <li>Speech to text</li>
+              <li>Cloud stalking</li>
+              <li>Convolutional Neural Networks</li>
+              <li>Deep learning</li>
+              <li>Social engineering</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="ex">
+          <div class="tag">
+            Exhibit B
+            <small>Digital forensics</small>
+          </div>
+
+          <div class="body">
+            <h3>Digital forensic investigation</h3>
+
+            <p>
+              Describe your investigation or forensic tool, the evidence
+              sources you examined, the methods you applied, and the
+              findings you obtained.
+            </p>
+
+            <ul class="chips">
+              <li>Evidence acquisition</li>
+              <li>File system analysis</li>
+              <li>Log analysis</li>
+              <li>Evidence integrity verification</li>
+              <li>Report generation</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="ex">
+          <div class="tag">
+            Exhibit C
+            <small>Security development</small>
+          </div>
+
+          <div class="body">
+            <h3>Security software development</h3>
+
+            <p>
+              Describe a software or cybersecurity project, the problem
+              it addresses, your implementation approach, and the
+              results. Add a repository, report or demonstration link.
+            </p>
+
+            <ul class="chips">
+              <li>Python</li>
+              <li>Web development</li>
+              <li>Security automation</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TEACHING SECTION -->
+  <section id="teaching">
+    <div class="wrap">
+      <h2>Teaching and mentoring</h2>
+
+      <div class="cols">
+        <div>
+          <h3>What I do</h3>
+
+          <ul>
+            <li>Lead tutorial sessions on cybersecurity and digital forensics fundamentals.</li>
+            <li>Guide students through practical labs, from evidence acquisition to reporting.</li>
+            <li>Provide assignment feedback and support students during practical work.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>How I teach</h3>
+
+          <ul>
+            <li>Start with a realistic scenario, then introduce the relevant theory.</li>
+            <li>Use hands-on labs to reinforce technical concepts.</li>
+            <li>Encourage students to document their steps and findings.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH SECTION -->
+  <section id="research">
+    <div class="wrap">
+      <h2>Research interests</h2>
+
+      <ul class="chips research-chips">
+        <li>Vishing and voice-based fraud</li>
+        <li>Social engineering detection</li>
+        <li>Web security and privacy</li>
+        <li>Digital evidence and chain of custody</li>
+        <li>Security education</li>
+      </ul>
+
+      <p>
+        I’m interested in how people are manipulated through phone calls
+        and messages, and how detection tools and effective teaching can
+        reduce that risk. Add publications, posters, talks or ongoing
+        studies with links.
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills">
+    <div class="wrap">
+      <h2>Skills</h2>
+      <div class="skills" id="skillgrid"></div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+
+      <div class="contact">
+        <div>
+          <p>
+            I’m open to research collaboration, teaching opportunities
+            and security projects. Send a message and I’ll reply by email.
+          </p>
+
+          <p>
+            <a href="mailto:info@brightpeter.com">info@brightpeter.com</a><br>
+            <a href="#" id="linkedin">LinkedIn</a> ·
+            <a href="#" id="github">GitHub</a>
+          </p>
+        </div>
+
+        <div>
+          <label for="n">
+            Your name
+            <input id="n" type="text" autocomplete="name">
+          </label>
+
+          <label for="m">
+            Message
+            <textarea class="m" id="m"></textarea>
+          </label>
+
+          <button class="btn pri" id="send" type="button">
+            Open email draft
+          </button>
+
+          <div id="status" role="status"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    © <span id="yr"></span> Bright Peter. Cyber Security and Digital Forensics.
+  </div>
+</footer>
+
+</body>
+</html>
